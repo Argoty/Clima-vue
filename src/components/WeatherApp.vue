@@ -124,14 +124,6 @@ export default {
         }
       }
     },
-
-
-    async traducir(str) {
-      let url = `https://translation.googleapis.com/language/translate/v2?key=${API_KEY}&q=${str}&target=es`;
-      let response = await fetch(url);
-      let data = await response.json();
-      return data.data.translations[0].translatedText;
-    },
   },
 };
 </script>
