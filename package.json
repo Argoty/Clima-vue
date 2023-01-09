@@ -8,8 +8,11 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
+<<<<<<< HEAD
     "dotenv": "^16.0.3",
     "dotenv-webpack": "^8.0.1",
+=======
+>>>>>>> a1fb95269f09e12653b525e146c4cb022b1da006
     "vue": "^2.6.14",
     "vuetify": "^2.6.0"
   },
