@@ -1,28 +1,57 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-app-bar
+      app
+      color="brown darken-3"
+      dark
+    >
+      <div class="d-flex align-center">
+        <v-img
+          alt="Climaexact Logo"
+          class="shrink mr-2"
+          contain
+          src="./assets/weatherIcon.png"
+          transition="scale-transition"
+          width="60"
+        />
+
+        <h1>Climexact...</h1>
+      </div>
+
+      <v-spacer></v-spacer>
+
+      <v-btn
+        href="https://openweathermap.org/"
+        target="_blank"
+        text
+      >
+        <span class="mr-2">OpenWeatherMap</span>
+        <v-icon>mdi-sun-wireless</v-icon>
+      </v-btn>
+    </v-app-bar>
+
+    <v-main>
+      <WeatherApp />
+    </v-main>
+
+    <Footer> </Footer>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import WeatherApp from './components/WeatherApp';
+import Footer from './components/Footer';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  components: {
+    WeatherApp,
+    Footer
+  },
+
+  data: () => ({
+    //
+  }),
+};
+</script>
