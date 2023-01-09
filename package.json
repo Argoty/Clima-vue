@@ -7,15 +7,19 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "vue": "^2.6.14"
+    "@babel/polyfill": "^7.4.4",
+    "vue": "^2.6.14",
+    "vuetify": "^2.6.0"
   },
   "devDependencies": {
     "@vue/cli-service": "~5.0.0",
+    "vue-cli-plugin-vuetify": "^2.5.8",
     "vue-template-compiler": "^2.6.14"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
-    "not dead"
+    "not dead",
+    "not ie <= 10"
   ]
 }
