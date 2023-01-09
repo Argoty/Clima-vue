@@ -20,11 +20,6 @@
         <v-flex xs12>
           <h2>Clima Actual de {{ weatherData.name }}</h2>
           <p class="font-weight-regular text-caption">{{ fechaActual }}</p>
-
-<<<<<<< HEAD
-=======
-
->>>>>>> a1fb95269f09e12653b525e146c4cb022b1da006
           <v-card>
             <v-card-text>
               <p>
@@ -129,7 +124,7 @@ export default {
         }
       }
     },
-<<<<<<< HEAD
+
 
     async traducir(str) {
       let url = `https://translation.googleapis.com/language/translate/v2?key=${API_KEY}&q=${str}&target=es`;
@@ -137,8 +132,6 @@ export default {
       let data = await response.json();
       return data.data.translations[0].translatedText;
     },
-=======
->>>>>>> a1fb95269f09e12653b525e146c4cb022b1da006
   },
 };
 </script>
