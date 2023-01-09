@@ -120,6 +120,7 @@ export default {
         } catch (error) {
           this.loader = false;
           this.error = true;
+          this.weatherData.name = null;
           console.error(error);
         }
       }
